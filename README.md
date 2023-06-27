@@ -8,8 +8,8 @@ Welcome to the home of Backdate Software **@github**.
 
 ## Github repositories
 
-### TP-Tools
-A set of FREE tools for your fanuc robot.
+### TP-Tools (beta)
+A set of FREE tools for your fanuc robot. (currently private repo)
 
 [TP-Tools](https://github.com/Backdate/TP-Tools)
 
