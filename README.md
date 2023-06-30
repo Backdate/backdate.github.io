@@ -4,6 +4,13 @@
 Welcome to the home of Backdate Software **@github**.
 
 
+![](./Werbung3.gif)
+
+This is about Fanuc robots and robot programming.
+
+- TP
+- Karel
+- HMI HTML/JS/ActiveX)
 
 
 ## Github repositories
@@ -13,8 +20,8 @@ A set of FREE tools for your fanuc robot. (currently private repo)
 
 [TP-Tools](https://github.com/Backdate/TP-Tools)
 
-
-#### This file
+---
+#### This page/repo
 
 [repo: https://github.com/Backdate/backdate.github.io](https://github.com/Backdate/backdate.github.io)
 
