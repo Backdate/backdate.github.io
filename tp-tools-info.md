@@ -40,6 +40,7 @@ If the Arg-Wizard can be used or there is a CRX plug-in this is described or exp
 
 ## RANDOM
 
+**RAND2REG**
 
 Generates a (pseudo) random number and writes the value into the corresponding register.
 
@@ -47,8 +48,17 @@ Uses $FAST_CLOCK to initialize, but can also be configured.
 
 ---
 
-## TP_WRITE
+## TP_VIEW
 
+TP_VIEW can be used to switch the windows/screens
+You can switch between
+- Single / Triple / Dual
+- Single_User / Single_User_Wide
+- Load a user_defined screen
+
+---
+
+## TP_WRITE
 
 TP_WRITE can be used to write single-line (dynamic) messages to various "screens".
 
@@ -60,6 +70,43 @@ Among others, the following are available for selection:
 
 The usage with the Arg-Wizard is in development.
 The CRX_PlugIn is under development
+
+---
+
+## TP_ARGS
+
+TP_ARGS can be used to check and log the ARG's which are given to a decent program. 
+This allows a program to use optional ARG's
+
+e.g.
+```
+CALL SET_PR(10,100,0,0)
+CALL SET_PR(10,100,0,0,0,0,0)
+
+..SET_PR
+    :CALL TP_ARGS('COUNT.LOCAL',AR[1],AR[2],AR[3],AR[4],AR[5],AR[6],AR[7]);
+    :IF $[TP_ARGS]COUNT = 4;
+        :PR[AR1,1]=AR[2];
+        :PR[AR1,2]=AR[3];
+        :PR[AR1,3]=AR[4];
+        :PR[AR1,4]=0;
+        :PR[AR1,5]=0;
+        :PR[AR1,6]=0;
+        :END;
+    :ENDIF;
+    :IF $[TP_ARGS]COUNT = 7;
+        :PR[AR1,1]=AR[2];
+        :PR[AR1,2]=AR[3];
+        :PR[AR1,3]=AR[4];
+        :PR[AR1,4]=AR[5];
+        :PR[AR1,5]=AR[6];
+        :PR[AR1,6]=AR[7];
+        :END;
+    :ENDIF;
+    !No of ARGS invalid;
+    :ABORT;
+
+```
 
 ---
 
