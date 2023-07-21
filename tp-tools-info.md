@@ -44,6 +44,8 @@ If the Arg-Wizard can be used or there is a CRX plug-in this is described or exp
 
 Generates a (pseudo) random number and writes the value into the corresponding register.
 
+![](./Random_Simple.gif)
+
 Uses $FAST_CLOCK to initialize, but can also be configured.
 
 ---
@@ -54,13 +56,28 @@ TP_VIEW can be used to switch the windows/screens
 You can switch between
 - Single / Triple / Dual
 - Single_User / Single_User_Wide
-- Load a user_defined screen
+- Load a user-defined screen
+- Show modal Dialogs
 
+
+![](./TP_VIEW_Example1.gif)
+
+
+e.g.
+```
+ :  CALL TP_VIEW('SCREEN.TRIPLE') ;
+ :  CALL TP_VIEW('DIALOG.YES_NO',123) ;
+ :  CALL TP_VIEW('LOAD_VIEW',3) ;
+ :  CALL TP_VIEW('CLEAR_VIEW',1) ;
+```
 ---
 
 ## TP_WRITE
 
 TP_WRITE can be used to write single-line (dynamic) messages to various "screens".
+
+
+![](./Werbung1.gif)
 
 Among others, the following are available for selection:
 
@@ -70,6 +87,7 @@ Among others, the following are available for selection:
 
 The usage with the Arg-Wizard is in development.
 The CRX_PlugIn is under development
+
 
 ---
 
@@ -116,7 +134,10 @@ CALL SET_PR(10,100,0,0,0,0,0)
 
 
 Make programs temporarily invisible or hide them
-  
+
+
+![](./SET_PROGS_INVISIBLE2.gif)
+
  ---
 
 ## PING
