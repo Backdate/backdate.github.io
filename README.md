@@ -15,10 +15,8 @@ This is about Fanuc robots and robot programming.
 
 ## Github repositories
 
-### TP-Tools (beta)
+### TP-Tools 
 A set of FREE tools for your fanuc robot.
-
-**open beta started**
 
 [TP-Tools-Repo](https://github.com/Backdate/TP-Tools) 
 
