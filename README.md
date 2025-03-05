@@ -20,10 +20,10 @@ A set of FREE tools for your fanuc robot.
 
 [TP-Tools-Repo](https://github.com/Backdate/TP-Tools) 
 
-### IBN-Tools
+### IBN-Tool
 Our tool to help you commissioning
 
-[https://github.com/Backdate/IBN-Tool](https://github.com/Backdate/IBN-Tool)
+[BN-Tool](https://github.com/Backdate/IBN-Tool)
 
 
 ### Roboguide Stuff
