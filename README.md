@@ -23,7 +23,7 @@ A set of FREE tools for your fanuc robot.
 ### IBN-Tool
 Our tool to help you commissioning
 
-[BN-Tool](https://github.com/Backdate/IBN-Tool)
+[IBN-Tool](https://github.com/Backdate/IBN-Tool)
 
 
 ### Roboguide Stuff
